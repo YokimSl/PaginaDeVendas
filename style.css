@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-family:'Sora', sans-serif ;
+    font-size: 1.6rem;
+    background-color: #FAFAF8;
+    padding: 0 1.6rem;
+}
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+button{
+    cursor: pointer;
+    transition: filter 0.5s;
+}
+
+button:hover{
+    filter: brightness(0.9);
+}
+
+header{
+    width: 100%;
+    padding: 0.8rem 0 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header img{
+    width: 100%;
+}
+
+header p span{
+    color: #47BD48;
+}
+header p strong{
+    color:#FF0000 ;
+}
+header p b{
+    color: #86448A;
+}
+
+header button{
+    padding: 1.5rem;
+    margin: 2.0rem auto;
+    border:none;
+    border-radius: 8px;
+
+    background-color: #47BD48;
+}
+
+
+header iframe {
+    width: 100%;
+    min-height: 30.0rem;
+}
+
+.card + .card{
+    margin-top: 3.0rem;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 1.0rem;
+}
+
+.card h2{
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin: 1.2rem 0;
+    text-align: center;
+    color: #47BD48;
+}
+
+.card p{
+    text-align: center;
+}
+
+footer{
+    padding: 5.0rem 1.2rem 2.4rem;
+    text-align: center;
+}
+
+footer p{
+    line-height: 2.0rem;
+}
+
+footer button{
+    width: 100%;
+    padding: 1.5rem;
+    margin: 2.0rem auto;
+    border:none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 2.0rem;
+
+    background-color: #47BD48;
+}
+
+@media (min-width: 768px){
+    body{
+        padding: 0 2.4rem;
+    }
+
+    header{
+        flex-direction: row;
+        gap: 34px;
+    }
+    header p{
+        text-align: justify;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 2.0rem;
+    }
+
+    .card{
+        height: 60.0rem;
+    }
+    .card + .card{
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1024px){
+
+    header{
+        max-width: 86.0rem;
+        margin: 0 auto;
+
+    }
+    
+    main{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 2.4rem;
+    }
+
+    .card{
+        width: 20.0rem;
+        height: 25.0rem;
+        margin-bottom: 20.0rem;
+    }
+
+    footer{
+        margin: 0 auto;
+        max-width: 70.0rem;
+    }
+
+    footer button {
+        width: 50%;
+    }
+}
